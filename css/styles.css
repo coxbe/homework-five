@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: gill;
+  src: url(../css/fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: proxima;
+  src: url(../css/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-nav nav {
+  max-width: 980px;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #000000 solid 2px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+}
+.about-nav nav .logo {
+  width: 92px;
+  height: 42px;
+}
+.about-nav nav .links {
+  width: 542px;
+  height: 42px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-nav nav .links div.pipe {
+  height: 60%;
+  width: 2px;
+  background-color: #79addc;
+}
+.about-nav nav .links div a {
+  font-family: gill;
+  font-size: 15px;
+  text-decoration: none;
+  margin: auto;
+  color: #000000;
+  text-transform: lowercase;
+}
+
+.about {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.about h1 {
+  font-size: 60px;
+  font-family: proxima;
+  font-weight: lighter;
+  text-decoration: underline;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+}
+.about p {
+  font-family: gill;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.about .about-bottom-section {
+  margin-top: 200px;
+  margin-bottom: 150px;
+  max-width: 676px;
+}
+.about .about-bottom-section h3 {
+  font-size: 40px;
+  font-family: proxima;
+  font-weight: lighter;
+  text-decoration: underline;
+  letter-spacing: 6px;
+  margin-bottom: 40px;
+}
+.about .about-bottom-section .client {
+  min-width: 676px;
+  min-height: 150px;
+  display: flex;
+  margin-bottom: 38px;
+}
+.about .about-bottom-section .client .client-img {
+  width: 260px;
+  height: 150px;
+}
+.about .about-bottom-section .client .client1 {
+  background-image: url(../images/about-client-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about .about-bottom-section .client .client2 {
+  background-image: url(../images/about-client-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about .about-bottom-section .client .client-q {
+  position: relative;
+  min-height: 50px;
+  width: 100%;
+  padding-left: 25px;
+}
+.about .about-bottom-section .client .client-q p:last-of-type {
+  margin-bottom: 55px;
+  font-family: gill;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+.about .about-bottom-section .client .client-q .name {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-family: gill;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #79addc;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    padding: 10px;
+  }
+}
+footer {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #79addc;
+  align-self: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .logo {
+  width: 92px;
+  height: 42px;
+  margin-right: -300px;
+}
+footer .copy {
+  font-family: gill;
+  font-size: 12px;
+  color: #ffffff;
+}
+footer .socials {
+  display: flex;
+  align-items: center;
+  margin-left: -300px;
+}
+
+.hero {
+  max-width: 1280px;
+  min-height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+  position: relative;
+  z-index: 4;
+}
+.hero .header {
+  width: 400px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: 0 auto;
+}
+.hero .header h1 {
+  font-family: proxima;
+  color: #ffffff;
+  font-size: 60px;
+  margin-top: 100px;
+  text-align: center;
+}
+.hero .header p {
+  font-family: gill;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  font-weight: lighter;
+}
+.hero .header .read-more {
+  font-family: gill;
+  font-size: 15px;
+  background-color: #79addc;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.promo-tours {
+  max-width: 1280px;
+  min-height: 304px;
+  margin: -50px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 160px;
+  padding-right: 160px;
+  z-index: 5;
+  position: relative;
+}
+.promo-tours .promo {
+  height: 304px;
+  width: 236px;
+  background-color: bisque;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.promo-tours .promo .header {
+  font-family: proxima;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.promo-tours .promo .price {
+  font-family: proxima;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.promo-tours .promo .learn-more {
+  font-family: gill;
+  font-size: 15px;
+  background-color: #79addc;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+.promo-tours .israel {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-israel/israel-tour-01.jpg);
+}
+.promo-tours .usa {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-usa/usa-tour-01.jpg);
+}
+.promo-tours .aus {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-uae/uae-tour-01.jpg);
+}
+
+@media only screen and (max-width: 1060px) {
+  .promo-tours {
+    width: 236px;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .promo-tours .promo {
+    margin-bottom: 30px;
+  }
+}
+.booking-form {
+  width: 60%;
+  height: 890px;
+  margin: 0 auto;
+}
+.booking-form h1 {
+  font-family: proxima;
+  font-size: 60px;
+  font-weight: lighter;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.booking-form input {
+  border: 1px solid #79addc;
+  font-family: gill;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.booking-form p {
+  font-family: gill;
+  font-size: 18px;
+  font-weight: lighter;
+  margin-top: 15px;
+  white-space: nowrap;
+}
+.booking-form .row1 {
+  display: flex;
+  justify-content: space-between;
+}
+.booking-form .row1 .text1 {
+  width: 42%;
+  height: 58px;
+  margin-bottom: 20px;
+}
+.booking-form .row1 .text1 input {
+  width: 100%;
+}
+.booking-form .row1 .text1 .text-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+.booking-form .row1 .text2 {
+  width: 55%;
+  height: 58px;
+  margin-bottom: 20px;
+}
+.booking-form .row1 .text2 input {
+  width: 100%;
+}
+.booking-form .row1 .text2 .text-field2 {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+.booking-form .row2 {
+  display: flex;
+  justify-content: space-between;
+}
+.booking-form .row2 .text1 {
+  width: 42%;
+  height: 58px;
+  margin-bottom: 20px;
+}
+.booking-form .row2 .text1 input {
+  width: 100%;
+}
+.booking-form .row2 .text1 .text-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+.booking-form .row2 .text2 {
+  width: 55%;
+  height: 58px;
+  margin-bottom: 20px;
+}
+.booking-form .row2 .text2 input {
+  width: 100%;
+}
+.booking-form .row2 .text2 .text-field2 {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+.booking-form .row3 {
+  display: flex;
+  justify-content: space-between;
+}
+.booking-form .row3 .text3 {
+  width: 42%;
+  height: 58px;
+  margin-bottom: 20px;
+}
+.booking-form .row3 .text3 input {
+  width: 100%;
+}
+.booking-form .row3 .text3 .text-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+.booking-form .rowextra {
+  display: flex;
+  justify-content: space-between;
+}
+.booking-form .rowextra .text3 {
+  width: 42%;
+  height: 58px;
+  margin-bottom: 20px;
+}
+.booking-form .rowextra .text3 input {
+  width: 100%;
+}
+.booking-form .rowextra .text3 .text-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+.booking-form .row4 {
+  display: flex;
+  justify-content: space-between;
+}
+.booking-form .row4 .text1 {
+  width: 42%;
+  height: 58px;
+  margin-bottom: 20px;
+}
+.booking-form .row4 .text1 input {
+  width: 100%;
+}
+.booking-form .row4 .text1 .text-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+.booking-form .row5 {
+  display: flex;
+  justify-content: space-between;
+}
+.booking-form .row5 .message {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.booking-form .row5 .message input {
+  width: 100%;
+  height: 192px;
+}
+.booking-form .row5 .message .text-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+.booking-form input {
+  font-family: gill;
+  font-size: 18px;
+  height: 58px;
+  margin: 0 auto 20px 0px;
+  border: solid 1px #79addc;
+  padding: 2px 2px 2px 5px;
+}
+.booking-form .submit {
+  width: 60%;
+  height: 60px;
+  margin: 0 auto;
+  font-family: gill;
+  font-size: 15px;
+  background-color: #79addc;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+@media only screen and (max-width: 1060px) {
+  .booking-form {
+    margin-bottom: 600px;
+  }
+  .booking-form .row4 {
+    display: block;
+    justify-content: center;
+  }
+}
+.homenav nav {
+  width: 76%;
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #ffffff solid 2px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+.homenav nav .logo {
+  width: 92px;
+  height: 42px;
+}
+.homenav nav .links {
+  width: 542px;
+  height: 42px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.homenav nav .links div.pipe {
+  height: 60%;
+  width: 2px;
+  background-color: #79addc;
+}
+.homenav nav .links div a {
+  font-family: gill;
+  font-size: 15px;
+  text-decoration: none;
+  margin: auto;
+  color: #ffffff;
+  text-transform: lowercase;
+}
