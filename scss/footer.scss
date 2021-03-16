@@ -1,5 +1,5 @@
 footer {
-  width: 100%;
+  max-width: 980px;
   height: 100px;
   margin: 0 auto;
   background-color: $blue;
@@ -11,7 +11,7 @@ footer {
   .logo {
     width: 92px;
     height: 42px;
-    margin-right: -300px;
+    // margin-right: -300px;
   }
 
   .copy {
@@ -23,6 +23,22 @@ footer {
   .socials {
     display: flex;
     align-items: center;
-    margin-left: -300px;
+    // margin-left: -300px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    display: block;
+    height: 200px;
+    .logo {
+      margin-bottom: 40px;
+    }
+    .copy {
+      margin-bottom: 40px;
+    }
+    .socials {
+      margin-bottom: 40px;
+    }
   }
 }
